@@ -312,6 +312,7 @@ ERROR_MSG
         run("ln -s ../#{bin} #{bin_dir}")
       end
 
+      File.symlink("/app/bin/ruby", "/app/bin/ruby.exe")
       @metadata.write("buildpack_ruby_version", ruby_version)
 
       if !@ruby_version_env_var
