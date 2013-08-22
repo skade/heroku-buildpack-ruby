@@ -62,6 +62,7 @@ private
           else
             ENV["RAILS_GROUPS"] ||= "assets"
             ENV["RAILS_ENV"]    ||= "production"
+            ENV["SHOW_DRAFTS"]  ||= "true"
 
             puts "Running: rake assets:precompile"
             require 'benchmark'
